@@ -59,3 +59,15 @@ echo file_get_contents('flag.txt');
 ```
 WEBSEC{BypassingImageChecksToRCE}
 ```
+
+## Level 17
+
+Bypass strcasecmp by providing array instead of string
+
+```yaml
+"body": "flag[]=blabla&submit=Go"
+```
+
+```
+WEBSEC{It_seems_that_php_could_use_a_stricter_typing_system}
+```
