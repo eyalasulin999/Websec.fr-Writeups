@@ -71,3 +71,19 @@ Bypass strcasecmp by providing array instead of string
 ```
 WEBSEC{It_seems_that_php_could_use_a_stricter_typing_system}
 ```
+
+## Level 25
+
+Exploit url_parse function
+
+```
+https://websec.fr/level25/index.php?page=flag&:1337
+```
+
+```
+https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf
+```
+
+```
+WEBSEC{How_am_I_supposed_to_parse_uri_when_everything_is_so_broooken}
+```
